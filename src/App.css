@@ -1,38 +1,107 @@
+/* App.css */
+
 .App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* FileUpload.css */
+.file-upload {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.file-upload button {
+  background-color: #007bff;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.file-upload button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+/* PDFViewer.css */
+.pdf-viewer {
+  margin-top: 20px;
+}
+
+.pdf-viewer h2 {
+  text-align: center;
+}
+/* TextImageEditing.css */
+
+.text-image-editing {
+  margin-bottom: 20px;
+}
+
+.text-image-editing .text-editor {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: Arial, sans-serif; /* Ensure consistent font family */
+}
+
+.text-image-editing .editing-tools {
+  margin-top: 10px;
+}
+
+.text-image-editing .editing-tools button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-family: Arial, sans-serif; /* Ensure consistent font family */
+}
+
+.text-image-editing .editing-tools button:hover {
+  background-color: #e0e0e0;
+}
+
+/* SaveChanges.css */
+
+.save-changes {
+  margin-top: 20px;
+}
+
+.save-changes button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif; /* Ensure consistent font family */
+}
+
+.save-changes button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .text-image-editing .text-editor {
+    height: 150px;
   }
 }
