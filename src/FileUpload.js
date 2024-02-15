@@ -1,4 +1,3 @@
-// FileUpload.js
 import React, { useRef, useState } from 'react';
 
 const FileUpload = ({ onFileUpload }) => {
